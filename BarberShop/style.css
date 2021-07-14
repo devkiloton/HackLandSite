@@ -1,11 +1,42 @@
-body{
+h2{
+    text-align: center;
+}
+
+.main{
     background: burlywood;
+    padding: 30px;
+}
+
+#banner{
+    width: 100%;
 }
 
 p{
     text-align: center;
 }
 
+#our_mission{
+    font-size: 20px;
+}
+
 em strong{
     color: crimson;
+}
+
+.Benefits{
+    background: white;
+}
+h3{
+    text-align: center;
+}
+
+.list{
+    font-style: italic;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30%;
+}
+
+.benefits{
+    width: 50%;
 }
