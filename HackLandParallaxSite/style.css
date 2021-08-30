@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 body, html{
     height:100%;
     margin:0;
@@ -6,8 +8,70 @@ body, html{
     font-weight:400;
     line-height:1.8em;
     color:#666;
+    background-color: #282e34;
   }
-  
+
+  li, a, button{
+    font-family: "Bebas Neue";
+    font-weight: 500;
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 3%;
+
+  }
+
+  .logo{
+    cursor: pointer;
+    max-width: 100px;
+    max-height: 35px;
+
+
+    margin-right: 3%;
+    
+  }
+
+  .nav__links{
+    list-style: none;
+    padding-left: 0px;
+  }
+
+  .nav__links li {
+    display: inline;
+    padding-right: 15px;
+    padding-left: 20px;
+  }
+
+  .nav__links a{
+    transition: all 0.3s ease 0s;
+  }
+
+
+  .nav__links li a:hover{
+    color: rgba(0, 136, 169, 1);
+  }
+
+  button{
+    margin-left: 10px;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+
+  button:hover{
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+
   .pimg1, .pimg2, .pimg3{
     position:relative;
     opacity:0.70;
