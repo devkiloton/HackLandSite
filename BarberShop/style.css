@@ -1,42 +1,280 @@
-h2{
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0; /*DireitaEsquerda  BottomTop*/
+}
+
+.caixa{
+    position: relative; /*Tornar referência para o nav*/
+    width: 940px; /*só uma resolução usada na web para caixa*/
+    margin: auto; /*cria espaçamento externo de forma que o conteúdo seja centralizado*/
+}
+
+nav{
+    position: absolute;
+    /*"position: static" is the default, it is, left-side on the top of the tag*/
+    /*"position: relative" you can change the position relative to the starting position*/
+    /*"position: absolute" is positioned relative to the nearest positioned ancestor, or else, the body */
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+margin-left: 10px;
+display: inline; /*tira a bolinha da lista e apresenta em linha*/
+}
+
+nav a{
+text-transform: uppercase;
+color: #000000;
+font-weight: bold;
+font-size: large;
+text-decoration: none;
+}
+
+nav a:hover{
+    color: darkorange;
+}
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li{
+    display:inline-block;/*O objeto ocupa o tmananho do conteúdo, mas é regulável*/
     text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /*Espreme o conteúdo interno lateral no padding*/
+    border-color: #000000;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
 }
 
-.main{
-    background: burlywood;
-    padding: 30px;
+.produtos li:hover{ /*isso é uma pseudo classe, edita o CSS*/
+    border-color: darkorange;
 }
 
-#banner{
+.produtos li:active{
+    border-color: greenyellow;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao{
+    font-size: 18px;
+}
+
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(bg.jpg);
+    padding: 40px 0;
+}
+
+footer p{
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+/*main{
+    
+}*/
+
+form{
+    margin: 40px;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao{
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+/*CSS inline > id > class > tag*/
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    transition: 0.7s background;
+    transition: 0.7s transform;
+    cursor:pointer;
+}
+.enviar:hover{
+    background: rgb(63, 102, 4);
+    transform: scale(1.1);
+}
+
+table{
+    margin: 40px ;
+}
+
+td,th{
+    border: 1px solid #000000;
+    font-size: 20PX;
+    padding: 4px 12px;
+}
+
+/*Estilo = usar classe
+  Comportamento = usa identificador*/
+
+/*CSS PAGINA INICIAL*/
+.banner{
     width: 100%;
 }
 
-p{
+.titulo-principal{
     text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
 }
 
-#our_mission{
-    font-size: 20px;
+.titulo-principal::first-letter{ /*isso é um pseudo elemento, pode "modificar" o html*/
+    font-weight: bold;
 }
 
-em strong{
-    color: crimson;
+.titulo-principal::before{
+    content: "[";
 }
 
-.Benefits{
-    background: white;
-}
-h3{
-    text-align: center;
+.titulo-principal::after{
+    content: "]";
 }
 
-.list{
+.principal{
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
     font-style: italic;
+}
+
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.beneficios{
+    padding: 3em 0;
+    background: #888888;
+}
+
+.conteudo-beneficios{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios{
+    width: 40%;
     display: inline-block;
     vertical-align: top;
-    margin-right: 30%;
 }
 
-.benefits{
-    width: 50%;
+.imagembeneficios{
+    width: 60%;
+    opacity: 0.7;
+    transition: 800ms opacity;
+    box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.imagembeneficios:hover{
+    opacity: 1;
+}
+
+.itens{
+    line-height: 1.5;
+}
+
+.itens::before{
+    content: "- "
+}
+
+.itens:first-child{
+    font-weight: bold;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(white,#888888);
+}
+
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p{
+    padding: 0 0 2em;
+    text-align: center;
+}
+
+.video{
+    width: 560px;
+    margin: 2em auto;
+}
+
+@media screen and (max-width: 480px){
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+        width: auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+        width: 300px;
+        margin: 0 auto;   
+    }
+
+    .lista-beneficios, .imagembeneficios{
+        width: 100%;
+    }
 }

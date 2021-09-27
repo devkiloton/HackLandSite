@@ -1,36 +1,69 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
-		<title>BarberShop</title>
+		<meta name="viewport" content="width=device-width">
+		<title>Barbearia Alura</title>
+		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 	</head>
+
 	<body>
-
 		<header>
-			<h1>The Barbershop</h1>
-		<header>
+            <div class="caixa">
+                <h1>
+                    <img src="logo.png" alt="Logo da barbearia Alura">
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+		<img class="banner" src="banner.jpg">
+		<main>
+			<section class="principal">
+				<h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
+				
+				<img class="utensilios" src="utensilios.jpg" alt="Utensilios de um barbeiro.">
 
-		<img id="banner" src = "banner.jpg">
+				<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+	
+				<p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+	
+				<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+			</section>
 
-		<div class="main">
-			<h2>About The BarberShop</h2>
-			
-			<p>Located in the heart of the city, <strong> The Barbershop</strong> brings to the market what's best for your hair and beard. Founded in 2019, The Barbershop is already a highlight in the city and wins new customers every day.</p>
+			<section class="mapa">
+				<h3 class="titulo-principal">Nosso estabelecimento</h3>
+				<p>Nosso estabelecimento está localizado no coração da cidade.</p>
+				<div class="mapa-conteudo">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1990.692880824106!2d-38.522345799217085!3d-3.7257805999999896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7484e07934c47%3A0x9f02d63c0394d455!2sR.%20Vinte%20e%20Cinco%20de%20Mar%C3%A7o%2C%20200%20-%20Centro%2C%20Fortaleza%20-%20CE%2C%2060060-120!5e0!3m2!1sen!2sbr!4v1632686805295!5m2!1sen!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+			</section>
 
-			<p id="our_mission">Our mission:<em><strong> "self-esteem and quality of life to the clients"</strong>.</em></p>
-
-			<p>We offer experienced professionals who are in tune with the changes in the fashion world. The service has a standard of excellence and agility, ensuring quality and satisfaction of our customers.</p>
-		</div>
-		
-		<div class="Benefits">
-			<h3>Benefits</h3>
-			<ul class="list">
-				<li>Qualified employees</li>
-				<li>Good music</li>
-				<li>Cool environment</li>
-			</ul>
-			<img class="benefits" src="benefits.jpg">
-		</div>
+			<section class="beneficios">
+				<h3 class="titulo-principal">Benefícios</h3>
+				<div class="conteudo-beneficios">
+					<ul class="lista-beneficios">
+						<li class="itens">Atendimento aos Clientes</li>
+						<li class="itens">Espaço diferenciado</li>
+						<li class="itens">Localização</li>
+						<li class="itens">Profissionais Qualificados</li>
+					</ul><img src="beneficios.jpg" class="imagembeneficios">
+				</div>
+				<div class="video">
+					<iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</section>
+		</main>
+		<footer>
+            <img src="logo-branco.png" alt="Logo da barbearia Alura">
+            <p>&copy; Copyright Barbearia Alura - 2021</p>
+        </footer>
 	</body>
 </html>
